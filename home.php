@@ -13,11 +13,10 @@
 							<a href="#" class="author">
 								<span class="name"><?php $user = the_author(); ?></span>
 								<img src="<?= get_avatar_url($user);?>" alt="" />
-								
 							</a>
 						</div>
 					</header>
-					<a href="#" class="image featured"><?php the_post_thumbnail(); ?></a>
+					<a href="<?php the_permalink(); ?>" class="image featured"><?php the_post_thumbnail(); ?></a>
 					<p><?php the_excerpt(); ?></p>
 					
 					<footer class="actions">
@@ -71,7 +70,7 @@
 								<header>
 									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 									<time class="published">Publié le <?php the_time( get_option( 'date_format' ) ); ?></time>
-									<a href="#" class="author"><img src="<?= get_avatar_url($user);?>" alt="" /></a>
+									<a href="<?php the_permalink(); ?>" class="author"><img src="<?= get_avatar_url($user);?>" alt="" /></a>
 								</header>
 								<a href="<?php the_permalink(); ?>" class="image"><div class="thumbs"><?php the_post_thumbnail(); ?></div></a>
 							</article>

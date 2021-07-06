@@ -40,17 +40,13 @@ function register_assets() {
     
     // Déclarer style.css à la racine du thème
     wp_enqueue_style( 
-        'capitaine',
+        'style',
         get_stylesheet_uri(), 
-        array(), 
-        '1.0'
     );
     // Déclarer un autre fichier CSS
     wp_enqueue_style( 
-        'capitaine', 
+        'fontawesome', 
         get_template_directory_uri() . '/assets/css/fontawesome-all.min.css',
-        array(), 
-        '1.0'
     );
 }
 add_action( 'wp_enqueue_scripts', 'register_assets' );
