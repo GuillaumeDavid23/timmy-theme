@@ -25,7 +25,7 @@
 						</ul>
 						<ul class="stats">
 							<li><a href="#">General</a></li>
-							<li><a href="#" class="icon solid fa-heart">28</a></li>
+							<li><a href="#" class="icon solid fa-"><?php if(function_exists('the_views')) { the_views(); } ?></a></li>
 							<li><a href="#" class="icon solid fa-comment"><?php comments_number(); ?></a></li>
 						</ul>
 					</footer>

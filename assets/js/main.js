@@ -82,7 +82,6 @@
 
 	// Intro.
 	var $intro = $('#intro');
-	console.log($intro);
 
 	// Move to main on <=large, back to sidebar on >large.
 	breakpoints.on('<=large', function () {
